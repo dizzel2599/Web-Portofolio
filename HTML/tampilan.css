@@ -1,0 +1,363 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+header{
+    background: url(./background1.jpg)no-repeat;
+    background-color: rgb(0, 255, 242);
+    background-blend-mode: multiply;
+    background-size: 100% 100%;
+    opacity: .8;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+   text-align: center;
+}
+
+header .wrapper-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+header .wrapper-center h1{
+    image-resolution: 100px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-shadow: 2px 4px 1px navy;
+    margin-bottom: 40px;
+    
+}
+
+header .wrapper-center img{
+    border-radius: 50%;
+    border: 6.5px solid white;
+    box-shadow: 0px 22px 26px 0px rgba(0,0 ,0,.8);
+    margin-bottom: 150px;
+}
+
+header .wrapper-center ul{
+    background-color: silver;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    border: 2px groove black;
+    width: 99.6vw;
+    height: 50px;
+}
+
+header .wrapper-center ul li{
+    border: 2px groove black;
+    width: 50%;
+}
+
+header .wrapper-center ul li a{
+    font-size: 31px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    line-height: 47px;
+    color: navy;
+    transition: 1s;
+}
+
+header .wrapper-center ul li a:hover{
+    text-decoration: underline;
+}
+
+.about{
+    background: turquoise;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.about .wrapper-center h2{
+    text-shadow: 2px 4px 1px navy;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    border-bottom: 7px solid white;
+    display: table;
+    padding-bottom: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    margin-bottom: 40px;
+     
+}
+.about .wrapper-center .aboutwc{
+    position: relative;
+}
+
+.about .wrapper-center .aboutwc p{
+    font-family: 'Big Shoulders Text', cursive;
+    background-color:grey;
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 40px;
+    margin-right: 40px;
+    border-radius: 6px;
+    
+
+}
+
+.about .wrapper-center .aboutwc img{
+    width: 25%;
+    float: left;
+    margin: auto 50px;
+    border-radius: 6px;
+    border: 6.5px solid white;
+    border-style: ridge;
+    vertical-align: middle;
+    
+}
+
+.skill{
+    background: turquoise;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.skill .wrapper-center{
+    width: 80%;
+
+}
+
+
+.skill .wrapper-center h2{
+    text-shadow: 2px 4px 1px navy;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    border-bottom: 7px solid white;
+    display: table;
+    padding-bottom: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    margin-bottom: 40px;
+     
+}
+
+.skill .wrapper-skill{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.skill .wrapper-skill h5{
+    text-align: left;
+    text-shadow: 0px 3px 0px navy;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 7px;
+    padding-left: 5px;
+}
+
+.skill .wrapper-skill .background{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background: white;
+    
+}
+
+.skill .wrapper-skill .background .indikator{
+    position: absolute;
+    height: 30px;
+    background: navy;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+}
+
+.indikator.coding{
+    width: 60%;
+}
+
+.indikator.video{
+    width: 70%;
+}
+
+.indikator.olahraga{
+    width: 90%;
+}
+
+.indikator.gaming{
+    width: 60%;
+}
+
+.education{
+    background: rgb(4, 212, 178);
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.education .wrapper-center h2{
+    text-shadow: 2px 4px 1px navy;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    border-bottom: 7px solid white;
+    display: table;
+    padding-bottom: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    margin-bottom: 40px;
+     
+}
+
+.education .wrapper-center .wrapper-school{
+    display: grid;
+    grid-gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.education .wrapper-school .school.sd img{
+    width: 100%;
+    height: 160px;
+    border-radius: 6px;
+}
+
+.education .wrapper-school .school.smp img{
+    width: 100%;
+    height: 160px;
+    border-radius: 6px;
+}
+
+.education .wrapper-school .school.sma img{
+    width: 100%;
+    border-radius: 6px;
+}
+
+.education .wrapper-school .school.univ img{
+    width: 100%;
+    height: 160px;
+    border-radius: 6px;
+}
+
+
+.wrapper-school a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 3px 1px navy;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.awards{
+    background: rgb(4, 212, 178);
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.awards .wrapper-center h2{
+    text-shadow: 2px 4px 1px navy;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    border-bottom: 7px solid white;
+    display: table;
+    padding-bottom: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    margin-bottom: 40px;
+     
+}
+
+.awards .wrapper-center .wrapper-awards{
+    display: grid;
+    grid-gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.awards .wrapper-awards .prestasi img{
+    width: 60%;
+    height: 180px;
+    border-radius: 6px;
+}
+
+.awards .wrapper-center h5{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 3px 1px navy;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.contacs{
+    background: turquoise;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.contacs .wrapper-center h2{
+    text-shadow: 2px 4px 1px navy;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    border-bottom: 7px solid white;
+    display: table;
+    padding-bottom: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    margin-bottom: 40px;
+     
+}
+
+
+.contacs .wrapper-hub a{
+    text-decoration: none;
+    color: white;
+}
